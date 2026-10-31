@@ -1,10 +1,25 @@
-# Multomodal-Image-Registration
-Multimodal Image Registration of Ultrasound and CT DICOM
+# Multimodal-Image-Registration
 
-It has been defined as; 
-The process of aliging two or more images of diffeent modalities, such as Ultrasound and CT, or CT and MRI and so on. Multimodal is used in other areas such as remote sensing, computer vision and robotics.
+Basic examples for **image registration**: finding corresponding points between two images (for example ultrasound and CT) as a first step towards aligning them.
 
-Goal of Multimodal Image Registration:
-The goal is to find a transformation that maps the pixel coordinates of one image onto the corresponding pixel coordinate of anothe image.
+> Status: learning examples, work in progress. Not for clinical use.
 
-The Registration invoves some steps like; Feature extraction, feature matching, and transformation estimation. 
+## What is image registration?
+Registration aligns two or more images, possibly from different modalities such as ultrasound, CT or MRI, by finding a transformation that maps the pixel coordinates of one image onto the other. The usual steps are feature extraction, feature matching and transformation estimation.
+
+## Contents
+| File | What it does |
+|---|---|
+| `Scale-Invariant Feature Transform.py` | Detects SIFT keypoints in two images and displays them |
+| `SIFT Algorithm.py` | Matches SIFT keypoints between two images and draws the best matches |
+
+Transformation estimation and full multimodal registration are **not implemented yet**.
+
+## Requirements
+`pip install opencv-python numpy` (SIFT needs OpenCV 4.4 or newer). Set the image paths at the top of each script. No images are included, and no patient data should be uploaded.
+
+## Use and contact
+If you use, adapt or contribute to this work, please credit the author and **contact or inform me by email: owaiskhan_bangash@yahoo.com**
+
+## Author
+BEN, Software Engineer. GitHub: [Bangash514](https://github.com/Bangash514)
